@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Educational Management Portal Design System - Professional Academic Theme */
+
+@layer base {
+  :root {
+    /* Base colors - Clean academic whites and grays */
+    --background: 0 0% 100%;
+    --foreground: 222 84% 4.9%;
+
+    /* Card system - Subtle elevation */
+    --card: 0 0% 100%;
+    --card-foreground: 222 84% 4.9%;
+
+    /* Popover system */
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 84% 4.9%;
+
+    /* Primary - Academic Blue */
+    --primary: 214 84% 56%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 214 84% 70%;
+    --primary-dark: 214 84% 42%;
+
+    /* Secondary - Sage Green for education */
+    --secondary: 142 35% 55%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-light: 142 35% 70%;
+
+    /* Accent - Warm academic orange */
+    --accent: 25 85% 60%;
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 25 85% 75%;
+
+    /* Muted - Neutral grays */
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+
+    /* Status colors */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Border and input */
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 214 84% 56%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--secondary-light)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(var(--muted)));
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(var(--primary) / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(var(--primary) / 0.1), 0 2px 4px -1px hsl(var(--primary) / 0.06);
+    --shadow-lg: 0 10px 15px -3px hsl(var(--primary) / 0.1), 0 4px 6px -2px hsl(var(--primary) / 0.05);
+    --shadow-glow: 0 0 20px hsl(var(--primary) / 0.15);
+
+    /* Animations */
+    --transition-base: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Chat scrollbar styling */
+.chat-scrollbar {
+  scrollbar-width: thin !important;
+  scrollbar-color: #94a3b8 #e2e8f0 !important;
+  overflow-y: scroll !important;
+}
+
+.chat-scrollbar::-webkit-scrollbar {
+  width: 8px !important;
+  background: #e2e8f0 !important;
+}
+
+.chat-scrollbar::-webkit-scrollbar-track {
+  background: #e2e8f0 !important;
+  border-radius: 4px !important;
+}
+
+.chat-scrollbar::-webkit-scrollbar-thumb {
+  background: #94a3b8 !important;
+  border-radius: 4px !important;
+}
+
+.chat-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #64748b !important;
+}
