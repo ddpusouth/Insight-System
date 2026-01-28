@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSPUCPA</title>
+    <meta name="description" content="The Bengaluru South Pre-University Colleges Principals' Association (BSPUCPA).">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Combined Styles -->
+    <link rel="stylesheet" href="landing.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/bspucpa.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- Header with Dark Blue Background -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" onclick="showPage('home'); return false;" class="navbar-brand">
+                    <img src="images/logo-bspucpa.png" alt="BSPUCPA Logo">
+                </a>
+                <button class="navbar-toggler" onclick="toggleMenu()" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#" onclick="showPage('home'); return false;"
+                            class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#" onclick="showPage('about-us'); return false;"
+                            class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="#" onclick="showPage('committee'); return false;"
+                            class="nav-link">Committee</a></li>
+                    <li class="nav-item"><a href="#" onclick="showPage('news-events'); return false;"
+                            class="nav-link">News & Events</a></li>
+                    <li class="nav-item"><a href="#" onclick="showPage('portal'); return false;" class="nav-link">Portal
+                            Access</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HOME SECTION -->
+    <div id="home" class="page-section active">
+        <!-- Hero Section with Modern Gradient -->
+        <section class="hero-section"
+            style="background: linear-gradient(rgba(15, 32, 39, 0.8), rgba(44, 83, 100, 0.8)), url('images/backgrounds/page-title.jpg'); background-size: cover; background-position: center;">
+            <div class="container hero-content">
+                <h1 class="hero-title">Empowering Education Excellence</h1>
+                <p class="hero-text">Uniting Pre-University College Principals in Bengaluru South to shape the future of
+                    education through collaboration, innovation, and unwavering commitment to student success.</p>
+            </div>
+        </section>
+
+        <!-- About Section with Modern Cards -->
+        <section class="features-section">
+            <div class="container">
+                <div class="section-title-bar">
+                    <h2>Discover BSPUCPA</h2>
+                    <p>The Bengaluru South Pre-University Colleges Principals' Association (BSPUCPA) stands as the
+                        premier
+                        professional network for educational leaders, fostering excellence and innovation across
+                        Pre-University institutions in Bengaluru South District.</p>
+                </div>
+
+                <div class="feature-grid">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <div class="card-image" style="background-image: url('images/events/colleges.png');">
+                        </div>
+                        <div class="card-header">
+                            <h3 class="card-title">About BSPUCPA</h3>
+                        </div>
+                        <div class="card-content">
+                            <p class="text-muted-foreground">Discover our network of distinguished Pre-University
+                                colleges
+                                committed to academic
+                                excellence and holistic student development.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" onclick="showPage('about-us'); return false;" class="card-link">Read more
+                                &rarr;</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <div class="card-image" style="background-image: url('images/events/newupdate.png');">
+                        </div>
+                        <div class="card-header">
+                            <h3 class="card-title">Latest Updates</h3>
+                        </div>
+                        <div class="card-content">
+                            <p class="text-muted-foreground">Stay informed with real-time announcements, upcoming
+                                events,
+                                important circulars, and
+                                educational initiatives.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" onclick="showPage('news-events'); return false;" class="card-link">Read more
+                                &rarr;</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="card">
+                        <div class="card-image" style="background-image: url('images/events/leadership.png');">
+                        </div>
+                        <div class="card-header">
+                            <h3 class="card-title">Leadership Team</h3>
+                        </div>
+                        <div class="card-content">
+                            <p class="text-muted-foreground">Meet the visionary leaders and dedicated committee members
+                                driving our mission forward with
+                                passion and expertise.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" onclick="showPage('committee'); return false;" class="card-link">Read more
+                                &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ABOUT US SECTION -->
+    <div id="about-us" class="page-section">
+        <!-- Hero Section -->
+        <section class="hero-section" style="min-height: 50vh;">
+            <div class="container hero-content">
+                <h1 class="hero-title">About Us</h1>
+                <p class="hero-text">"Education is the premise of progress, in every society, in every family."</p>
+            </div>
+        </section>
+
+        <!-- About Content -->
+        <section class="features-section">
+            <div class="container">
+                <div class="section-title-bar">
+                    <h2>About BSPUCPA</h2>
+                </div>
+
+                <div style="max-width: 900px; margin: 0 auto;">
+                    <p style="margin-bottom: 20px; font-size: 1.1rem; color: var(--light-text);">Education is the
+                        premise of
+                        progress, in every society, in every family.
+                        Education is not preparation for life, but, Education is Life itself. It is the endeavour of the
+                        Department of Pre-University Education to prepare students for their higher education.</p>
+
+                    <p style="margin-bottom: 20px; font-size: 1.1rem; color: var(--light-text);">At this juncture, the
+                        Department of Pre-University Education has to meet
+                        challenges of the competitive world. It is necessary for the system of education to satisfy the
+                        present-day society. In other words, Department of Pre-University Education has aimed at
+                        training
+                        young minds in building and nurturing the intellectual and cultural aspects of students for
+                        their
+                        all-round development. For this purpose, the Department of Pre-University Education has actively
+                        involved the department officials, college principals and staff.</p>
+
+                    <p style="margin-bottom: 40px; font-size: 1.1rem; color: var(--light-text);">Under the umbrella of
+                        Karnataka State Pre-University Colleges
+                        Principals’ Association, the Bengaluru South Pre-University Colleges Principals’ Association
+                        came
+                        into existence in 1992. Since then Principals’ Association is working in co-ordination with the
+                        Deputy Director to channelise and execute programmes of the department, the guidance and the
+                        co-operation of the deputy directors has inspired the association to discharge its duties
+                        efficiently and enthusiastically.</p>
+
+                    <div class="section-title-bar" style="margin-bottom: 3rem; margin-top: 4rem;">
+                        <h2>Mottos of the Association</h2>
+                    </div>
+
+                    <ul style="list-style-type: none; padding-left: 0; display: grid; gap: 1rem;">
+                        <li
+                            style="background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; align-items: start; gap: 15px; border: 1px solid rgba(0,0,0,0.05);">
+                            <span style="color: var(--primary-color); font-size: 1.5rem; line-height: 1;">•</span>
+                            <span style="color: var(--text-color);">Conducting tests, mid-term examination and
+                                preparatory
+                                examination as per schedule</span>
+                        </li>
+                        <li
+                            style="background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; align-items: start; gap: 15px; border: 1px solid rgba(0,0,0,0.05);">
+                            <span style="color: var(--primary-color); font-size: 1.5rem; line-height: 1;">•</span>
+                            <span style="color: var(--text-color);">Organising district, divisional and state level
+                                sports
+                                and cultural competitions with the co-operation of the department</span>
+                        </li>
+                        <li
+                            style="background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; align-items: start; gap: 15px; border: 1px solid rgba(0,0,0,0.05);">
+                            <span style="color: var(--primary-color); font-size: 1.5rem; line-height: 1;">•</span>
+                            <span style="color: var(--text-color);">Conducting workshops, seminars, refresher courses
+                                and
+                                training programmes for lecturers to enhance the quality of teaching</span>
+                        </li>
+                        <li
+                            style="background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; align-items: start; gap: 15px; border: 1px solid rgba(0,0,0,0.05);">
+                            <span style="color: var(--primary-color); font-size: 1.5rem; line-height: 1;">•</span>
+                            <span style="color: var(--text-color);">Honouring retired principals and other officials for
+                                their sincere service</span>
+                        </li>
+                        <li
+                            style="background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; align-items: start; gap: 15px; border: 1px solid rgba(0,0,0,0.05);">
+                            <span style="color: var(--primary-color); font-size: 1.5rem; line-height: 1;">•</span>
+                            <span style="color: var(--text-color);">Felicitating meritorious students</span>
+                        </li>
+                        <li
+                            style="background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; align-items: start; gap: 15px; border: 1px solid rgba(0,0,0,0.05);">
+                            <span style="color: var(--primary-color); font-size: 1.5rem; line-height: 1;">•</span>
+                            <span style="color: var(--text-color);">Conducting administrative trainings for principals,
+                                conducting special workshops for the principals and staff to maintain accounts of the
+                                office, the records of the institution and day-to-day administration of the
+                                college</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- COMMITTEE SECTION -->
+    <div id="committee" class="page-section">
+        <!-- Hero Section -->
+        <section class="hero-section" style="min-height: 50vh;">
+            <div class="container hero-content">
+                <h1 class="hero-title">Governing Committee</h1>
+                <p class="hero-text">"The roots of education are bitter, but the fruit is sweet."</p>
+            </div>
+        </section>
+
+        <!-- Committee Content -->
+        <section class="features-section">
+            <div class="container">
+                <!-- Committee Grid -->
+                <div class="committee-grid">
+                    <!-- 1. MANOJAKUMARA KOLLA - HONORARY PRESIDENT -->
+                    <div class="card committee-member team1">
+                        <div class="member-image"
+                            style="background-image: url('images/teachers/MANOJAKUMARA KOLLA.png');">
+                        </div>
+                        <div class="card-header">
+                            <h3 class="card-title">MANOJAKUMARA KOLLA</h3>
+                            <p class="card-description" style="color: var(--primary-color);">HONORARY PRESIDENT</p>
+                        </div>
+                        <div class="card-content">
+                            <p class="text-muted-foreground">DEPUTY DIRECTOR, DEPT OF SCHOOL EDUCATION (P.U.), BENGALURU
+                                SOUTH.</p>
+                            <p style="margin-top: 10px;"><a href="tel:+919591593550"
+                                    style="color: var(--text-color);"><i class="ti-mobile"></i> +91-95915 93550</a></p>
+                        </div>
+                    </div>
+
+                    <!-- 2. PRASANNA KUMAR - PRESIDENT -->
+                    <div class="card committee-member team1">
+                        <div class="member-image" style="background-image: url('images/teachers/PRASANNA KUMAR.jpg');">
+                        </div>
+                        <div class="card-header">
+                            <h3 class="card-title">PRASANNA KUMAR</h3>
+                            <p class="card-description" style="color: var(--primary-color);">PRESIDENT</p>
+                        </div>
+                        <div class="card-content">
+                            <p class="text-muted-foreground">PRINCIPAL, GOVT P U COLLEGE, MINERVA CIRCLE, BENGALURU</p>
+                            <p style="margin-top: 10px;"><a href="tel:+919482679699"
+                                    style="color: var(--text-color);"><i class="ti-mobile"></i> +91-94826 79699</a></p>
+                        </div>
+                    </div>
+
+                    <!-- 3. Dr. S N NATARAJ - WORKING PRESIDENT -->
+                    <div class="card committee-member team1">
+                        <div class="member-image"
+                            style="background-image: url('images/teachers/Dr. S N  NATARAJ.jpg');">
+                        </div>
+                        <div class="card-header">
+                            <h3 class="card-title">Dr. S N NATARAJ</h3>
+                            <p class="card-description" style="color: var(--primary-color);">WORKING PRESIDENT</p>
+                        </div>
+                        <div class="card-content">
+                            <p class="text-muted-foreground">PRINCIPAL, SRI BHAGAVAN MAHAVEER JAIN P U COLLEGE, V V
+                                PURAM,
+                                BENGALURU</p>
+                            <p style="margin-top: 10px;"><a href="tel:+919844233602"
+                                    style="color: var(--text-color);"><i class="ti-mobile"></i> +91-98442 33602</a></p>
+                        </div>
+                    </div>
+
+                    <!-- 4. THIMMAIAH - SECRETARY -->
+                    <div class="card committee-member team2">
+                        <div class="member-image" style="background-image: url('images/teachers/THIMMAIAH.jpg');"></div>
+                        <div class="card-header">
+                            <h3 class="card-title">THIMMAIAH</h3>
+                            <p class="card-description" style="color: var(--primary-color);">SECRETARY</p>
+                        </div>
+                        <div class="card-content">
+                            <p class="text-muted-foreground">PRINCIPAL, KENGERI P U COLLEGE, KENGERI</p>
+                            <p style="margin-top: 10px;"><a href="tel:+919900495163"
+                                    style="color: var(--text-color);"><i class="ti-mobile"></i> +91-99004 95163</a></p>
+                        </div>
+                    </div>
+
+                    <!-- 5. RAMESH V - TREASURER -->
+                    <div class="card committee-member team3">
+                        <div class="member-image" style="background-image: url('images/teachers/RAMESH V.jpg');">
+                        </div>
+                        <div class="card-header">
+                            <h3 class="card-title">RAMESH V</h3>
+                            <p class="card-description" style="color: var(--primary-color);">TREASURER</p>
+                        </div>
+                        <div class="card-content">
+                            <p class="text-muted-foreground">PRINCIPAL, GOVT P U COLLEGE, YEDIYURU, BENGALURU</p>
+                            <p style="margin-top: 10px;"><a href="tel:+919844193553"
+                                    style="color: var(--text-color);"><i class="ti-mobile"></i> +91-98441 93553</a></p>
+                        </div>
+                    </div>
+
+                    <!-- 6. Dr. B R SUPREETH - ORGANISING SECRETARY -->
+                    <div class="card committee-member team5">
+                        <div class="member-image"
+                            style="background-image: url('images/teachers/Dr. B R SUPREETH.jpg');">
+                        </div>
+                        <div class="card-header">
+                            <h3 class="card-title">Dr. B R SUPREETH</h3>
+                            <p class="card-description" style="color: var(--primary-color);">ORGANISING SECRETARY</p>
+                        </div>
+                        <div class="card-content">
+                            <p class="text-muted-foreground">PRINCIPAL, OXFORD IND P U COLLEGE, ULLALU, BENGALURU</p>
+                            <p style="margin-top: 10px;"><a href="tel:+919845185324"
+                                    style="color: var(--text-color);"><i class="ti-mobile"></i> +91-98451 85324</a></p>
+                        </div>
+                    </div>
+
+                    <!-- 7. NAGARAJA P C - ORGANISING SECRETARY -->
+                    <div class="card committee-member team5">
+                        <div class="member-image" style="background-image: url('images/teachers/NAGARAJA P C.jpg');">
+                        </div>
+                        <div class="card-header">
+                            <h3 class="card-title">NAGARAJA P C</h3>
+                            <p class="card-description" style="color: var(--primary-color);">ORGANISING SECRETARY</p>
+                        </div>
+                        <div class="card-content">
+                            <p class="text-muted-foreground">PRINCIPAL, VIJAYA P U COLLEGE, JAYANAGARA 4TH BLOCK,
+                                BENGALURU
+                            </p>
+                            <p style="margin-top: 10px;"><a href="tel:+919731302599"
+                                    style="color: var(--text-color);"><i class="ti-mobile"></i> +91-97313 02599</a></p>
+                        </div>
+                    </div>
+
+                    <!-- 8. Dr. VIJAYA R - ORGANISING SECRETARY -->
+                    <div class="card committee-member team5">
+                        <div class="member-image" style="background-image: url('images/teachers/Dr. VIJAYA R.jpg');">
+                        </div>
+                        <div class="card-header">
+                            <h3 class="card-title">Dr. VIJAYA R</h3>
+                            <p class="card-description" style="color: var(--primary-color);">ORGANISING SECRETARY</p>
+                        </div>
+                        <div class="card-content">
+                            <p class="text-muted-foreground">PRINCIPAL, JANATHA P U COLLEGE, CHAMARAJAPET, BENGALURU</p>
+                            <p style="margin-top: 10px;"><a href="tel:+919980035458"
+                                    style="color: var(--text-color);"><i class="ti-mobile"></i> +91-99800 35458</a></p>
+                        </div>
+                    </div>
+
+                    <!-- 9. NARAYANAPPA M - VICE PRESIDENT -->
+                    <div class="card committee-member team4">
+                        <div class="member-image" style="background-image: url('images/teachers/NARAYANAPPA M.jpg');">
+                        </div>
+                        <div class="card-header">
+                            <h3 class="card-title">NARAYANAPPA M</h3>
+                            <p class="card-description" style="color: var(--primary-color);">VICE PRESIDENT</p>
+                        </div>
+                        <div class="card-content">
+                            <p class="text-muted-foreground">PRINCIPAL, GOVT P U COLLEGE, NEW FORT, BENGALURU</p>
+                            <p style="margin-top: 10px;"><a href="tel:+919448573532"
+                                    style="color: var(--text-color);"><i class="ti-mobile"></i> +91-94485 73532</a></p>
+                        </div>
+                    </div>
+
+                    <!-- 10. B R CHANDRASHEKARAPPA - VICE PRESIDENT -->
+                    <div class="card committee-member team4">
+                        <div class="member-image"
+                            style="background-image: url('images/teachers/B R CHANDRASHEKARAPPA.jpg');"></div>
+                        <div class="card-header">
+                            <h3 class="card-title">B R CHANDRASHEKARAPPA</h3>
+                            <p class="card-description" style="color: var(--primary-color);">VICE PRESIDENT</p>
+                        </div>
+                        <div class="card-content">
+                            <p class="text-muted-foreground">PRINCIPAL, SURANA P U COLLEGE, BENGALURU</p>
+                            <p style="margin-top: 10px;"><a href="tel:+9199722 77884"
+                                    style="color: var(--text-color);"><i class="ti-mobile"></i> +91-99722 77884</a></p>
+                        </div>
+                    </div>
+                    <!-- 11. SUDHAKARA G R - VICE PRESIDENT -->
+                    <div class="card committee-member team4">
+                        <div class="member-image" style="background-image: url('images/teachers/SUDHAKARA G R.jpg');">
+                        </div>
+                        <div class="card-header">
+                            <h3 class="card-title">SUDHAKARA G R</h3>
+                            <p class="card-description" style="color: var(--primary-color);">VICE PRESIDENT</p>
+                        </div>
+                        <div class="card-content">
+                            <p class="text-muted-foreground">PRINCIPAL, GUPTHA P U COLLEGE, BSK 3RD STAGE, BENGALURU</p>
+                            <p style="margin-top: 10px;"><a href="tel:+9194484 11814"
+                                    style="color: var(--text-color);"><i class="ti-mobile"></i> +91-94484 11814</a></p>
+                        </div>
+                    </div>
+
+                    <!-- 12. VANI H - VICE PRESIDENT -->
+                    <div class="card committee-member team4">
+                        <div class="member-image" style="background-image: url('images/teachers/VANI H.jpg');">
+                        </div>
+                        <div class="card-header">
+                            <h3 class="card-title">VANI H</h3>
+                            <p class="card-description" style="color: var(--primary-color);">VICE PRESIDENT</p>
+                        </div>
+                        <div class="card-content">
+                            <p class="text-muted-foreground">PRINCIPAL, SM GOTAVAT JAIN P U COLLEGE, BENGALURU</p>
+                            <p style="margin-top: 10px;"><a href="tel:+9194803 39779"
+                                    style="color: var(--text-color);"><i class="ti-mobile"></i> +91-94803 39779</a></p>
+                        </div>
+                    </div>
+
+                    <!-- 13. DORESWAMY - VICE PRESIDENT -->
+                    <div class="card committee-member team4">
+                        <div class="member-image" style="background-image: url('images/teachers/DORESWAMY.jpg');"></div>
+                        <div class="card-header">
+                            <h3 class="card-title">DORESWAMY</h3>
+                            <p class="card-description" style="color: var(--primary-color);">VICE PRESIDENT</p>
+                        </div>
+                        <div class="card-content">
+                            <p class="text-muted-foreground">PRINCIPAL, GOVT PU COLLEGE, ADUGODI, BENGALURU</p>
+                            <p style="margin-top: 10px;"><a href="tel:+9194485 75031"
+                                    style="color: var(--text-color);"><i class="ti-mobile"></i> +91-94485 75031</a></p>
+                        </div>
+                    </div>
+                    <!-- 14. Dr. PRAKASH G E - JOINT SECRETARY -->
+                    <div class="card committee-member team4">
+                        <div class="member-image" style="background-image: url('images/teachers/Dr. PRAKASH G E.jpg');">
+                        </div>
+                        <div class="card-header">
+                            <h3 class="card-title">Dr. PRAKASH G E</h3>
+                            <p class="card-description" style="color: var(--primary-color);">JOINT SECRETARY</p>
+                        </div>
+                        <div class="card-content">
+                            <p class="text-muted-foreground">PRINCIPAL, SREE VENKATESHWARA P U COLLEGE, K R PURAM,
+                                BENGALURU</p>
+                            <p style="margin-top: 10px;"><a href="tel:+9197401 89953"
+                                    style="color: var(--text-color);"><i class="ti-mobile"></i> +91-97401 89953</a></p>
+                        </div>
+                    </div>
+                    <!-- 15. CHENNAVEERAPPA  D S - JOINT SECRETARY -->
+                    <div class="card committee-member team4">
+                        <div class="member-image"
+                            style="background-image: url('images/teachers/CHENNAVEERAPPA\ \ D\ S.jpg');"></div>
+                        <div class="card-header">
+                            <h3 class="card-title">Chennaveerappa D S</h3>
+                            <p class="card-description" style="color: var(--primary-color);">JOINT SECRETARY</p>
+                        </div>
+                        <div class="card-content">
+                            <p class="text-muted-foreground">PRINCIPAL, C V GURUKULA IND P U COLLEGE, MAGADI MAIN ROAD,
+                                BENGALURU</p>
+                            <p style="margin-top: 10px;"><a href="tel:+9191643 40960"
+                                    style="color: var(--text-color);"><i class="ti-mobile"></i> +91-91643 40960</a></p>
+                        </div>
+                    </div>
+                    <!-- 16. KEERTHI BADIADKA - JOINT SECRETARY -->
+                    <div class="card committee-member team4">
+                        <div class="member-image"
+                            style="background-image: url('images/teachers/KEERTHI BADIADKA.jpg');"></div>
+                        <div class="card-header">
+                            <h3 class="card-title">Keerti Badidadka</h3>
+                            <p class="card-description" style="color: var(--primary-color);">JOINT SECRETARY</p>
+                        </div>
+                        <div class="card-content">
+                            <p class="text-muted-foreground">PRINCIPAL, SILICON CITY P U COLLEGE, KONANAKUNTE, BENGALURU
+                            </p>
+                            <p style="margin-top: 10px;"><a href="tel:+9198452 07913"
+                                    style="color: var(--text-color);"><i class="ti-mobile"></i> +91-98452 07913</a></p>
+                        </div>
+                    </div>
+                    <!-- 17. SHEELA PRAKASH S N - MEMBER -->
+                    <div class="card committee-member team4">
+                        <div class="member-image"
+                            style="background-image: url('images/teachers/SHEELA PRAKASH S N.jpg');"></div>
+                        <div class="card-header">
+                            <h3 class="card-title">SHEELA PRAKASH S N</h3>
+                            <p class="card-description" style="color: var(--primary-color);">MEMBER</p>
+                        </div>
+                        <div class="card-content">
+                            <p class="text-muted-foreground">PRINCIPAL, NMKRV PU COLLEGE, JAYANAGARA, BENGALURU</p>
+                            <p style="margin-top: 10px;"><a href="tel:+918073161495"
+                                    style="color: var(--text-color);"><i class="ti-mobile"></i> +91-8073161495</a></p>
+                        </div>
+                    </div>
+                    <!-- 18. NAGARAJA - MEMBER -->
+                    <div class="card committee-member team4">
+                        <div class="member-image" style="background-image: url('images/teachers/NAGARAJA.jpg');">
+                        </div>
+                        <div class="card-header">
+                            <h3 class="card-title">NAGARAJA</h3>
+                            <p class="card-description" style="color: var(--primary-color);">MEMBER</p>
+                        </div>
+                        <div class="card-content">
+                            <p class="text-muted-foreground">PRINCIPAL, GOVT P U COLLEGE, AGARA, BENGALURU</p>
+                            <p style="margin-top: 10px;"><a href="tel:+919916945677"
+                                    style="color: var(--text-color);"><i class="ti-mobile"></i> +91-99169 45677</a></p>
+                        </div>
+                    </div>
+                    <!-- 19. KESHAVA REDDY M - MEMBER -->
+                    <div class="card committee-member team4">
+                        <div class="member-image" style="background-image: url('images/teachers/KESHAVA REDDY M.jpg');">
+                        </div>
+                        <div class="card-header">
+                            <h3 class="card-title">Keshava Reddy M</h3>
+                            <p class="card-description" style="color: var(--primary-color);">MEMBER</p>
+                        </div>
+                        <div class="card-content">
+                            <p class="text-muted-foreground">PRINCIPAL, GOVT P U COLLEGE, HOODI, BENGALURU</p>
+                            <p style="margin-top: 10px;"><a href="tel:+919449466996"
+                                    style="color: var(--text-color);"><i class="ti-mobile"></i> +91-94494 66996</a></p>
+                        </div>
+                    </div>
+                    <!-- 20. MANJUNATHA M R- MEMBER -->
+                    <div class="card committee-member team4">
+                        <div class="member-image" style="background-image: url('images/teachers/MANJUNATHA M R.jpg');">
+                        </div>
+                        <div class="card-header">
+                            <h3 class="card-title">Manjunatha M R</h3>
+                            <p class="card-description" style="color: var(--primary-color);">MEMBER</p>
+                        </div>
+                        <div class="card-content">
+                            <p class="text-muted-foreground">PRINCIPAL, BBMP PU COLLEGE FOR GIRLS, BHAIRAVESHWARANAGARA,
+                                BENGALURU</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- NEWS & EVENTS SECTION -->
+    <div id="news-events" class="page-section">
+        <!-- Hero Section -->
+        <section class="hero-section" style="min-height: 50vh;">
+            <div class="container hero-content">
+                <h1 class="hero-title">News & Events</h1>
+                <p class="hero-text">Stay informed with the latest announcements, circulars, and upcoming events.</p>
+            </div>
+        </section>
+
+        <!-- News Content -->
+        <section class="features-section">
+            <div class="container">
+                <div class="section-title-bar">
+                    <h2>Latest Updates</h2>
+                </div>
+
+                <div class="feature-grid">
+                    <!-- News Item 1 -->
+                    <div class="card">
+                        <div class="card-image" style="background-image: url('images/events/meeting.png');">
+                        </div>
+                        <div class="card-header">
+                            <h3 class="card-title">Principal Association General Meeting</h3>
+                            <p class="card-description">December 3, 2025</p>
+                        </div>
+                        <div class="card-content">
+                            <p class="text-muted-foreground">Join us for the General Meeting to discuss key association
+                                matters and future initiatives.</p>
+                        </div>
+                        <div class="card-footer">
+                        </div>
+                    </div>
+
+                    <!-- News Item 2 -->
+                    <div class="card">
+                        <div class="card-image"
+                            style="background-image: url('images/events/insight.jpeg'); background-size: contain; background-repeat: no-repeat;">
+                        </div>
+                        <div class="card-header">
+                            <h3 class="card-title">Insight Website Launch</h3>
+                            <p class="card-description">December 3, 2025</p>
+                        </div>
+                        <div class="card-content">
+                            <p class="text-muted-foreground">We are excited to announce the launch of the new Insight
+                                website, empowering our educational community.</p>
+                        </div>
+                        <div class="card-footer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- PORTAL SECTION -->
+    <div id="portal" class="page-section">
+        <!-- Hero Section -->
+        <section class="hero-section" style="min-height: 50vh;">
+            <div class="container hero-content">
+                <h1 class="hero-title">Portal Access</h1>
+                <p class="hero-text">Select a portal to login.</p>
+            </div>
+        </section>
+
+        <!-- Portal Content -->
+        <section class="features-section">
+            <div class="container">
+                <div class="feature-grid"
+                    style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); max-width: 900px; margin: 0 auto;">
+
+                    <!-- Insight Portal -->
+                    <div class="card" style="text-align: center; position: relative;">
+                        <div
+                            style="position: absolute; top: 10px; right: 10px; background: #FFD700; color: #000; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; z-index: 10;">
+                            BETA RELEASE</div>
+                        <div class="card-image"
+                            style="background-image: url('images/events/insight.jpeg'); background-size: contain; background-repeat: no-repeat; height: 180px;">
+                        </div>
+                        <div class="card-header">
+                            <h3 class="card-title">Insight</h3>
+                            <p class="card-description">Administrative Portal</p>
+                        </div>
+                        <div class="card-content">
+                            <p class="text-muted-foreground">Login to the Insight portal for administrative tasks and
+                                internal communications.</p>
+                        </div>
+                        <div class="card-footer" style="justify-content: center;">
+                            <a href="/insight.html" class="btn-feature" style="text-decoration: none;">Login to
+                                Insight</a>
+                        </div>
+                    </div>
+
+                </div>
+
+        </section>
+
+        <!-- System Demo & Manual Section -->
+        <section class="features-section" style="background: var(--bg-color); padding-top: 0;">
+            <div class="container">
+                <div class="section-title-bar" style="margin-bottom: 3rem;">
+                    <h2>System Overview</h2>
+                    <p>Explore the system capabilities through our demo video and user manual.</p>
+                </div>
+
+                <div style="max-width: 1000px; margin: 0 auto; display: grid; gap: 3rem;">
+
+                    <!-- Demo Video -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">System Demo</h3>
+                        </div>
+                        <div class="card-content">
+                            <div
+                                style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: var(--radius); background: #000;">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/eWIopdOu9V0"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                                    style="position: absolute; top: 0; left: 0;">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- User Manual (Coming Soon) -->
+                    <!--
+                    <div class="card">
+                        <div class="card-header"
+                            style="display: flex; justify-content: space-between; align-items: left;">
+                            <h3 class="card-title">User Manual</h3>
+                        </div>
+                        <div class="card-content">
+                            <div
+                                style="height: 600px; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden;">
+                                <iframe src="INSIGHT System.pdf" style="width: 100%; height: 100%; border: none;">
+                                    <p>Your browser does not support iframes. <a href="INSIGHT System.pdf">Download the
+                                            PDF</a> to view it.</p>
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Modern Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy;
+                    <script>document.write(new Date().getFullYear())</script> <a href="https://datalegions.netlify.app/"
+                        target="_blank" style="color: inherit; text-decoration: none;">DataLegions</a>. All Rights
+                    Reserved. |
+                    Empowering Education, Inspiring Excellence
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Combined Script -->
+    <script src="landing.js"></script>
+
+</body>
+
+</html>
